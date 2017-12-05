@@ -1,0 +1,819 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E9F51331FD69957007157DD /* GeneralPreferencesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E9F51301FD69956007157DD /* GeneralPreferencesView.xib */; };
+		2E9F51341FD69957007157DD /* GeneralPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9F51311FD69957007157DD /* GeneralPreferencesViewController.m */; };
+		2E9F51371FD69999007157DD /* AboutPreferenceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E9F51361FD69999007157DD /* AboutPreferenceView.xib */; };
+		2E9F513C1FD69A1B007157DD /* AboutPreferenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9F513B1FD69A1B007157DD /* AboutPreferenceViewController.m */; };
+		2E9F51401FD69BDA007157DD /* PreferencesWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9F513F1FD69BDA007157DD /* PreferencesWindow.m */; };
+		2E9F51431FD6A055007157DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E9F51411FD6A055007157DD /* Main.storyboard */; };
+		2E9F514D1FD74CCF007157DD /* PreferencesStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9F514C1FD74CCF007157DD /* PreferencesStore.m */; };
+		2EF7DB991FD500770049A09F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF7DB981FD500770049A09F /* AppDelegate.swift */; };
+		2EF7DB9D1FD500780049A09F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EF7DB9C1FD500780049A09F /* Assets.xcassets */; };
+		2EF7DBAC1FD500780049A09F /* DisplaySwitcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF7DBAB1FD500780049A09F /* DisplaySwitcherTests.swift */; };
+		2EF7DBB71FD500780049A09F /* DisplaySwitcherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF7DBB61FD500780049A09F /* DisplaySwitcherUITests.swift */; };
+		2EF7DBC71FD5537A0049A09F /* DisplayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF7DBC61FD5537A0049A09F /* DisplayManager.swift */; };
+		2EF7DBCA1FD562C50049A09F /* DisplayUtilts.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF7DBC91FD562C50049A09F /* DisplayUtilts.m */; };
+		338D2525C70CAE508E11A01D /* Pods_DisplaySwitcherUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF17F7773A84D1A36B0447B0 /* Pods_DisplaySwitcherUITests.framework */; };
+		41CCEAEF2B8492A98ED49C77 /* Pods_DisplaySwitcherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D49141613EB9CE22B124160F /* Pods_DisplaySwitcherTests.framework */; };
+		A13DEAE95A4884CB32F4A943 /* Pods_DisplaySwitcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57191D9479A441BB200F7021 /* Pods_DisplaySwitcher.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2EF7DBA81FD500780049A09F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2EF7DB8D1FD500770049A09F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2EF7DB941FD500770049A09F;
+			remoteInfo = DisplaySwitcher;
+		};
+		2EF7DBB31FD500780049A09F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2EF7DB8D1FD500770049A09F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2EF7DB941FD500770049A09F;
+			remoteInfo = DisplaySwitcher;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2E9F51301FD69956007157DD /* GeneralPreferencesView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GeneralPreferencesView.xib; sourceTree = "<group>"; };
+		2E9F51311FD69957007157DD /* GeneralPreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneralPreferencesViewController.m; sourceTree = "<group>"; };
+		2E9F51321FD69957007157DD /* GeneralPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralPreferencesViewController.h; sourceTree = "<group>"; };
+		2E9F51361FD69999007157DD /* AboutPreferenceView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutPreferenceView.xib; sourceTree = "<group>"; };
+		2E9F513B1FD69A1B007157DD /* AboutPreferenceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutPreferenceViewController.m; sourceTree = "<group>"; };
+		2E9F513D1FD69A34007157DD /* AboutPreferenceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutPreferenceViewController.h; sourceTree = "<group>"; };
+		2E9F513E1FD69BDA007157DD /* PreferencesWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PreferencesWindow.h; sourceTree = "<group>"; };
+		2E9F513F1FD69BDA007157DD /* PreferencesWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PreferencesWindow.m; sourceTree = "<group>"; };
+		2E9F51421FD6A055007157DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2E9F514B1FD74CCF007157DD /* PreferencesStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PreferencesStore.h; sourceTree = "<group>"; };
+		2E9F514C1FD74CCF007157DD /* PreferencesStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PreferencesStore.m; sourceTree = "<group>"; };
+		2EF7DB951FD500770049A09F /* DisplaySwitcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DisplaySwitcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EF7DB981FD500770049A09F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2EF7DB9C1FD500780049A09F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2EF7DBA11FD500780049A09F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EF7DBA21FD500780049A09F /* DisplaySwitcher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DisplaySwitcher.entitlements; sourceTree = "<group>"; };
+		2EF7DBA71FD500780049A09F /* DisplaySwitcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DisplaySwitcherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EF7DBAB1FD500780049A09F /* DisplaySwitcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplaySwitcherTests.swift; sourceTree = "<group>"; };
+		2EF7DBAD1FD500780049A09F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EF7DBB21FD500780049A09F /* DisplaySwitcherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DisplaySwitcherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EF7DBB61FD500780049A09F /* DisplaySwitcherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplaySwitcherUITests.swift; sourceTree = "<group>"; };
+		2EF7DBB81FD500780049A09F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EF7DBC51FD500E20049A09F /* libswiftCoreGraphics.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libswiftCoreGraphics.tbd; path = System/Library/PrivateFrameworks/Swift/libswiftCoreGraphics.tbd; sourceTree = SDKROOT; };
+		2EF7DBC61FD5537A0049A09F /* DisplayManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayManager.swift; sourceTree = "<group>"; };
+		2EF7DBC81FD562C40049A09F /* DisplaySwitcher-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DisplaySwitcher-Bridging-Header.h"; sourceTree = "<group>"; };
+		2EF7DBC91FD562C50049A09F /* DisplayUtilts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DisplayUtilts.m; sourceTree = "<group>"; };
+		2EF7DBCB1FD568710049A09F /* DisplayUtilts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DisplayUtilts.h; sourceTree = "<group>"; };
+		332FA164071A1538C2091266 /* Pods-DisplaySwitcherUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DisplaySwitcherUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DisplaySwitcherUITests/Pods-DisplaySwitcherUITests.release.xcconfig"; sourceTree = "<group>"; };
+		57191D9479A441BB200F7021 /* Pods_DisplaySwitcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DisplaySwitcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FE4BECDF6182F7E5D329E5F /* Pods-DisplaySwitcherTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DisplaySwitcherTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DisplaySwitcherTests/Pods-DisplaySwitcherTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A5AE150062B28F21EF9E794F /* Pods-DisplaySwitcherUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DisplaySwitcherUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DisplaySwitcherUITests/Pods-DisplaySwitcherUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AF17F7773A84D1A36B0447B0 /* Pods_DisplaySwitcherUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DisplaySwitcherUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5ED51C321DEE8D4CD651192 /* Pods-DisplaySwitcher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DisplaySwitcher.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DisplaySwitcher/Pods-DisplaySwitcher.debug.xcconfig"; sourceTree = "<group>"; };
+		BF25FACA55E37A4FF5FF0E5E /* Pods-DisplaySwitcher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DisplaySwitcher.release.xcconfig"; path = "Pods/Target Support Files/Pods-DisplaySwitcher/Pods-DisplaySwitcher.release.xcconfig"; sourceTree = "<group>"; };
+		D49141613EB9CE22B124160F /* Pods_DisplaySwitcherTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DisplaySwitcherTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E01436CB92253BAEAF9B556D /* Pods-DisplaySwitcherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DisplaySwitcherTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DisplaySwitcherTests/Pods-DisplaySwitcherTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2EF7DB921FD500770049A09F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A13DEAE95A4884CB32F4A943 /* Pods_DisplaySwitcher.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EF7DBA41FD500780049A09F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41CCEAEF2B8492A98ED49C77 /* Pods_DisplaySwitcherTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EF7DBAF1FD500780049A09F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				338D2525C70CAE508E11A01D /* Pods_DisplaySwitcherUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E9F51351FD69963007157DD /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				2E9F51301FD69956007157DD /* GeneralPreferencesView.xib */,
+				2E9F51321FD69957007157DD /* GeneralPreferencesViewController.h */,
+				2E9F51311FD69957007157DD /* GeneralPreferencesViewController.m */,
+				2E9F51361FD69999007157DD /* AboutPreferenceView.xib */,
+				2E9F513B1FD69A1B007157DD /* AboutPreferenceViewController.m */,
+				2E9F513D1FD69A34007157DD /* AboutPreferenceViewController.h */,
+				2E9F513E1FD69BDA007157DD /* PreferencesWindow.h */,
+				2E9F513F1FD69BDA007157DD /* PreferencesWindow.m */,
+				2E9F514B1FD74CCF007157DD /* PreferencesStore.h */,
+				2E9F514C1FD74CCF007157DD /* PreferencesStore.m */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
+		2EF7DB8C1FD500770049A09F = {
+			isa = PBXGroup;
+			children = (
+				2EF7DB971FD500770049A09F /* DisplaySwitcher */,
+				2EF7DBAA1FD500780049A09F /* DisplaySwitcherTests */,
+				2EF7DBB51FD500780049A09F /* DisplaySwitcherUITests */,
+				2EF7DB961FD500770049A09F /* Products */,
+				2EF7DBC41FD500E20049A09F /* Frameworks */,
+				A129881DB1F1C618663AD4EB /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		2EF7DB961FD500770049A09F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2EF7DB951FD500770049A09F /* DisplaySwitcher.app */,
+				2EF7DBA71FD500780049A09F /* DisplaySwitcherTests.xctest */,
+				2EF7DBB21FD500780049A09F /* DisplaySwitcherUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2EF7DB971FD500770049A09F /* DisplaySwitcher */ = {
+			isa = PBXGroup;
+			children = (
+				2E9F51351FD69963007157DD /* Preferences */,
+				2EF7DB981FD500770049A09F /* AppDelegate.swift */,
+				2EF7DB9C1FD500780049A09F /* Assets.xcassets */,
+				2EF7DBA11FD500780049A09F /* Info.plist */,
+				2E9F51411FD6A055007157DD /* Main.storyboard */,
+				2EF7DBA21FD500780049A09F /* DisplaySwitcher.entitlements */,
+				2EF7DBC61FD5537A0049A09F /* DisplayManager.swift */,
+				2EF7DBC91FD562C50049A09F /* DisplayUtilts.m */,
+				2EF7DBC81FD562C40049A09F /* DisplaySwitcher-Bridging-Header.h */,
+				2EF7DBCB1FD568710049A09F /* DisplayUtilts.h */,
+			);
+			path = DisplaySwitcher;
+			sourceTree = "<group>";
+		};
+		2EF7DBAA1FD500780049A09F /* DisplaySwitcherTests */ = {
+			isa = PBXGroup;
+			children = (
+				2EF7DBAB1FD500780049A09F /* DisplaySwitcherTests.swift */,
+				2EF7DBAD1FD500780049A09F /* Info.plist */,
+			);
+			path = DisplaySwitcherTests;
+			sourceTree = "<group>";
+		};
+		2EF7DBB51FD500780049A09F /* DisplaySwitcherUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2EF7DBB61FD500780049A09F /* DisplaySwitcherUITests.swift */,
+				2EF7DBB81FD500780049A09F /* Info.plist */,
+			);
+			path = DisplaySwitcherUITests;
+			sourceTree = "<group>";
+		};
+		2EF7DBC41FD500E20049A09F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2EF7DBC51FD500E20049A09F /* libswiftCoreGraphics.tbd */,
+				57191D9479A441BB200F7021 /* Pods_DisplaySwitcher.framework */,
+				D49141613EB9CE22B124160F /* Pods_DisplaySwitcherTests.framework */,
+				AF17F7773A84D1A36B0447B0 /* Pods_DisplaySwitcherUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A129881DB1F1C618663AD4EB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B5ED51C321DEE8D4CD651192 /* Pods-DisplaySwitcher.debug.xcconfig */,
+				BF25FACA55E37A4FF5FF0E5E /* Pods-DisplaySwitcher.release.xcconfig */,
+				7FE4BECDF6182F7E5D329E5F /* Pods-DisplaySwitcherTests.debug.xcconfig */,
+				E01436CB92253BAEAF9B556D /* Pods-DisplaySwitcherTests.release.xcconfig */,
+				A5AE150062B28F21EF9E794F /* Pods-DisplaySwitcherUITests.debug.xcconfig */,
+				332FA164071A1538C2091266 /* Pods-DisplaySwitcherUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2EF7DB941FD500770049A09F /* DisplaySwitcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EF7DBBB1FD500780049A09F /* Build configuration list for PBXNativeTarget "DisplaySwitcher" */;
+			buildPhases = (
+				F75189D9C4D6453B1298FD48 /* [CP] Check Pods Manifest.lock */,
+				2EF7DB911FD500770049A09F /* Sources */,
+				2EF7DB921FD500770049A09F /* Frameworks */,
+				2EF7DB931FD500770049A09F /* Resources */,
+				48A77BE5B05E58A91DAE1440 /* [CP] Embed Pods Frameworks */,
+				F72994D7F1EEE4EADEA25DC7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DisplaySwitcher;
+			productName = DisplaySwitcher;
+			productReference = 2EF7DB951FD500770049A09F /* DisplaySwitcher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2EF7DBA61FD500780049A09F /* DisplaySwitcherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EF7DBBE1FD500780049A09F /* Build configuration list for PBXNativeTarget "DisplaySwitcherTests" */;
+			buildPhases = (
+				2DEA4F1090182DE20839A4B0 /* [CP] Check Pods Manifest.lock */,
+				2EF7DBA31FD500780049A09F /* Sources */,
+				2EF7DBA41FD500780049A09F /* Frameworks */,
+				2EF7DBA51FD500780049A09F /* Resources */,
+				F4047D09B204BE28AA4C3A8D /* [CP] Embed Pods Frameworks */,
+				6FB345D92CFE1E879CBCBC44 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2EF7DBA91FD500780049A09F /* PBXTargetDependency */,
+			);
+			name = DisplaySwitcherTests;
+			productName = DisplaySwitcherTests;
+			productReference = 2EF7DBA71FD500780049A09F /* DisplaySwitcherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2EF7DBB11FD500780049A09F /* DisplaySwitcherUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EF7DBC11FD500780049A09F /* Build configuration list for PBXNativeTarget "DisplaySwitcherUITests" */;
+			buildPhases = (
+				5951F58C80014530F8B08C78 /* [CP] Check Pods Manifest.lock */,
+				2EF7DBAE1FD500780049A09F /* Sources */,
+				2EF7DBAF1FD500780049A09F /* Frameworks */,
+				2EF7DBB01FD500780049A09F /* Resources */,
+				C3B781522B3C3E0017133678 /* [CP] Embed Pods Frameworks */,
+				2BEAD759623357FF52921307 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2EF7DBB41FD500780049A09F /* PBXTargetDependency */,
+			);
+			name = DisplaySwitcherUITests;
+			productName = DisplaySwitcherUITests;
+			productReference = 2EF7DBB21FD500780049A09F /* DisplaySwitcherUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2EF7DB8D1FD500770049A09F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = ljb;
+				TargetAttributes = {
+					2EF7DB941FD500770049A09F = {
+						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
+						ProvisioningStyle = Automatic;
+					};
+					2EF7DBA61FD500780049A09F = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2EF7DB941FD500770049A09F;
+					};
+					2EF7DBB11FD500780049A09F = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2EF7DB941FD500770049A09F;
+					};
+				};
+			};
+			buildConfigurationList = 2EF7DB901FD500770049A09F /* Build configuration list for PBXProject "DisplaySwitcher" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2EF7DB8C1FD500770049A09F;
+			productRefGroup = 2EF7DB961FD500770049A09F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2EF7DB941FD500770049A09F /* DisplaySwitcher */,
+				2EF7DBA61FD500780049A09F /* DisplaySwitcherTests */,
+				2EF7DBB11FD500780049A09F /* DisplaySwitcherUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2EF7DB931FD500770049A09F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E9F51371FD69999007157DD /* AboutPreferenceView.xib in Resources */,
+				2EF7DB9D1FD500780049A09F /* Assets.xcassets in Resources */,
+				2E9F51331FD69957007157DD /* GeneralPreferencesView.xib in Resources */,
+				2E9F51431FD6A055007157DD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EF7DBA51FD500780049A09F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EF7DBB01FD500780049A09F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2BEAD759623357FF52921307 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DisplaySwitcherUITests/Pods-DisplaySwitcherUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2DEA4F1090182DE20839A4B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DisplaySwitcherTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48A77BE5B05E58A91DAE1440 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DisplaySwitcher/Pods-DisplaySwitcher-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MASPreferences/MASPreferences.framework",
+				"${BUILT_PRODUCTS_DIR}/MASShortcut/MASShortcut.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MASPreferences.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MASShortcut.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DisplaySwitcher/Pods-DisplaySwitcher-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5951F58C80014530F8B08C78 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DisplaySwitcherUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FB345D92CFE1E879CBCBC44 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DisplaySwitcherTests/Pods-DisplaySwitcherTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3B781522B3C3E0017133678 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DisplaySwitcherUITests/Pods-DisplaySwitcherUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4047D09B204BE28AA4C3A8D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DisplaySwitcherTests/Pods-DisplaySwitcherTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F72994D7F1EEE4EADEA25DC7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DisplaySwitcher/Pods-DisplaySwitcher-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F75189D9C4D6453B1298FD48 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DisplaySwitcher-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2EF7DB911FD500770049A09F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E9F514D1FD74CCF007157DD /* PreferencesStore.m in Sources */,
+				2E9F51341FD69957007157DD /* GeneralPreferencesViewController.m in Sources */,
+				2E9F51401FD69BDA007157DD /* PreferencesWindow.m in Sources */,
+				2EF7DBCA1FD562C50049A09F /* DisplayUtilts.m in Sources */,
+				2EF7DBC71FD5537A0049A09F /* DisplayManager.swift in Sources */,
+				2EF7DB991FD500770049A09F /* AppDelegate.swift in Sources */,
+				2E9F513C1FD69A1B007157DD /* AboutPreferenceViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EF7DBA31FD500780049A09F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EF7DBAC1FD500780049A09F /* DisplaySwitcherTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EF7DBAE1FD500780049A09F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EF7DBB71FD500780049A09F /* DisplaySwitcherUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2EF7DBA91FD500780049A09F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2EF7DB941FD500770049A09F /* DisplaySwitcher */;
+			targetProxy = 2EF7DBA81FD500780049A09F /* PBXContainerItemProxy */;
+		};
+		2EF7DBB41FD500780049A09F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2EF7DB941FD500770049A09F /* DisplaySwitcher */;
+			targetProxy = 2EF7DBB31FD500780049A09F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2E9F51411FD6A055007157DD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E9F51421FD6A055007157DD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2EF7DBB91FD500780049A09F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2EF7DBBA1FD500780049A09F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		2EF7DBBC1FD500780049A09F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5ED51C321DEE8D4CD651192 /* Pods-DisplaySwitcher.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = DisplaySwitcher/DisplaySwitcher.entitlements;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = DisplaySwitcher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ljb.DisplaySwitcher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "DisplaySwitcher/DisplaySwitcher-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		2EF7DBBD1FD500780049A09F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF25FACA55E37A4FF5FF0E5E /* Pods-DisplaySwitcher.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = DisplaySwitcher/DisplaySwitcher.entitlements;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = DisplaySwitcher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ljb.DisplaySwitcher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "DisplaySwitcher/DisplaySwitcher-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		2EF7DBBF1FD500780049A09F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FE4BECDF6182F7E5D329E5F /* Pods-DisplaySwitcherTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = DisplaySwitcherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ljb.DisplaySwitcherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DisplaySwitcher.app/Contents/MacOS/DisplaySwitcher";
+			};
+			name = Debug;
+		};
+		2EF7DBC01FD500780049A09F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E01436CB92253BAEAF9B556D /* Pods-DisplaySwitcherTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = DisplaySwitcherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ljb.DisplaySwitcherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DisplaySwitcher.app/Contents/MacOS/DisplaySwitcher";
+			};
+			name = Release;
+		};
+		2EF7DBC21FD500780049A09F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5AE150062B28F21EF9E794F /* Pods-DisplaySwitcherUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = DisplaySwitcherUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ljb.DisplaySwitcherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = DisplaySwitcher;
+			};
+			name = Debug;
+		};
+		2EF7DBC31FD500780049A09F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 332FA164071A1538C2091266 /* Pods-DisplaySwitcherUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = DisplaySwitcherUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ljb.DisplaySwitcherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = DisplaySwitcher;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2EF7DB901FD500770049A09F /* Build configuration list for PBXProject "DisplaySwitcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EF7DBB91FD500780049A09F /* Debug */,
+				2EF7DBBA1FD500780049A09F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2EF7DBBB1FD500780049A09F /* Build configuration list for PBXNativeTarget "DisplaySwitcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EF7DBBC1FD500780049A09F /* Debug */,
+				2EF7DBBD1FD500780049A09F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2EF7DBBE1FD500780049A09F /* Build configuration list for PBXNativeTarget "DisplaySwitcherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EF7DBBF1FD500780049A09F /* Debug */,
+				2EF7DBC01FD500780049A09F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2EF7DBC11FD500780049A09F /* Build configuration list for PBXNativeTarget "DisplaySwitcherUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EF7DBC21FD500780049A09F /* Debug */,
+				2EF7DBC31FD500780049A09F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2EF7DB8D1FD500770049A09F /* Project object */;
+}

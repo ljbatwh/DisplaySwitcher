@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>DisplaySwitcher.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>2EF7DB941FD500770049A09F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2EF7DBA61FD500780049A09F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2EF7DBB11FD500780049A09F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
